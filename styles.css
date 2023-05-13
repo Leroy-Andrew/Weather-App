@@ -14,3 +14,9 @@ body {
     border-radius: 5px;
     padding: 20px;
 }
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
