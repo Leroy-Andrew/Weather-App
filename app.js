@@ -34,6 +34,13 @@ async function getWeatherData(cityValue) {
 
         weatherData.querySelector(
            ".description").textContent = `${description}`;
+           if(description == "scattered clouds") {
+            document.body.style.backgroundImage ="url('assets/cloudy.jpg')";
+        } else if (description == "clear sky") {
+            document.body.style.backgroundImage ="url('assets/sunny.jpg')";
+        } else if (description == "light rain", "heavy intensity rain") {
+            document.body.style.backgroundImage ="url('assets/rain.jpg')";
+        }
 
         weatherData.querySelector(
            ".details").innerHTML = details.map((detail) => `<div>${detail}</div>`).join("");
