@@ -4,6 +4,8 @@ body {
     font-family: "Montserrat", sans-serif;
     background-color: #f7f7f7;
     background-image: url("assets/weather.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .container {
     background-color: #fff;
