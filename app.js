@@ -40,7 +40,16 @@ async function getWeatherData(cityValue) {
             document.body.style.backgroundImage ="url('assets/sunny.jpg')";
         } else if (description === "rain") {
             document.body.style.backgroundImage ="url('assets/rain.jpg')";
+        } else if (description === "few clouds") {
+            document.body.style.backgroundImage ="url('assets/fewClouds.jpg')";
+        } else if (description === "scattered clouds") {
+            document.body.style.backgroundImage ="url('assets/scatteredClouds.jpg')";
+        } else if (description === "broken clouds") {
+            document.body.style.backgroundImage ="url('assets/brokenClouds.jpg')";
+        } else if (description === "overcast clouds") {
+            document.body.style.backgroundImage ="url('assets/overcastClouds.jpg')";
         }
+
 
         weatherData.querySelector(
            ".details").innerHTML = details.map((detail) => `<div>${detail}</div>`).join("");
